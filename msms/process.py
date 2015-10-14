@@ -1,15 +1,20 @@
+#!/usr/bin/env python3
+
 import pandas as pd
 import math
 
 # Filter functions
 
-def filter_bad_rows(df, intensity_col='Intensity Pynd_AlkKO_WCL', epsilon=6193.8):
+def filter_bad_rows(df):
+
+    # EX: 'Intensity Pynd_AlkKO_WCL'
     # remove known and possible contaminants
-    df = df[df['Potential contaminant'] != '+']
+    #df = df[df['Potential contaminant'] != '+']
 
     # remove REV and CON
-    df = df[not df['Protein IDs'].str.contains("REV")]
-    df = df[not df['Protein IDs'].str.contains("CON")]
+
+    df = df[df['Protein IDs'].str.contains("REV") == False]
+    df = df[df['Protein IDs'].str.contains("CON") == False]
     #print(df['Protein IDs'].str.contains("REV"))
 
     return df
