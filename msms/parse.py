@@ -6,6 +6,19 @@ import re
 from site_string import SiteString
 import copy
 
+def remove_cols(df, col_names_to_exclude):
+    """
+    Removes from the DataFrame every column whose name is a superset of any name in col_names_to_exclude
+    Especially useful for filtering out the samples of other groups.
+    """
+    cols_copy = copy.copy(df.columns)
+    for col in cols_copy:
+        for group_name in col_names_to_exclude:
+            if group_name.lower() in col.lower():
+                df.drop(col, axis=1, inplace=True)
+                break
+    return df
+
 
 def filter_tsv(input_file, output_file, col_name, pattern):
     """
@@ -44,7 +57,12 @@ def parse_evidence(f, cols_to_drop=None):
     """
 
     if cols_to_drop is None:
-        cols_to_drop=['Raw file', 'MS/MS m/z', 'Charge', 'm/z', 'Mass', 'Resolution', 'Uncalibrated - Calibrated m/z [ppm]', 'Uncalibrated - Calibrated m/z [Da]', 'Mass Error [ppm]', 'Mass Error [Da]', 'Uncalibrated Mass Error [ppm]', 'Uncalibrated Mass Error [Da]', 'Max intensity m/z 0', 'Retention time', 'Retention length', 'Calibrated retention time', 'Calibrated retention time start', 'Calibrated retention time finish', 'Retention time calibration', 'Match time difference', 'Match m/z difference', 'Match q-value']):
+        cols_to_drop=['Raw file', 'MS/MS m/z', 'Charge', 'm/z', 'Mass', 'Resolution', 'Uncalibrated - Calibrated m/z [ppm]',
+                      'Uncalibrated - Calibrated m/z [Da]', 'Mass Error [ppm]', 'Mass Error [Da]',
+                      'Uncalibrated Mass Error [ppm]', 'Uncalibrated Mass Error [Da]', 'Max intensity m/z 0',
+                      'Retention time', 'Retention length', 'Calibrated retention time',
+                      'Calibrated retention time start', 'Calibrated retention time finish',
+                      'Retention time calibration', 'Match time difference', 'Match m/z difference', 'Match q-value']
 
 
     df = pandas.read_table(f, header=0, index_col=0)
