@@ -137,7 +137,6 @@ def parse_protein_groups(f):
     ]:
         df[m] = df[m].map(lambda s: [int(st) for st in str(s).split(';')] if str(s) != 'nan' else [])
 
-    print(df.dtypes)
     return df
 
 def parse_phosphosites(f):
