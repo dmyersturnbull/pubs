@@ -1,0 +1,46 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (release 20150430)
+Annotation Version and Release Date:	GO Ontology database  Released 2015-08-06
+Analyzed List:	upload_1 (Saccharomyces cerevisiae)
+Reference List:	Saccharomyces cerevisiae (all genes in database)
+Bonferroni correction:	true
+GO biological process complete	Saccharomyces cerevisiae - REFLIST (6597)	upload_1 (253)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+rRNA-containing ribonucleoprotein complex export from nucleus	60	13	2.30	+	 > 5	1.41E-03
+ribonucleoprotein complex export from nucleus	117	20	4.49	+	4.46	7.20E-05
+ribonucleoprotein complex localization	118	20	4.53	+	4.42	8.26E-05
+nuclear export	120	20	4.60	+	4.35	1.08E-04
+cellular respiration	95	14	3.64	+	3.84	4.20E-02
+nucleocytoplasmic transport	165	24	6.33	+	3.79	6.28E-05
+establishment of RNA localization	124	18	4.76	+	3.79	3.53E-03
+RNA transport	124	18	4.76	+	3.79	3.53E-03
+energy derivation by oxidation of organic compounds	138	20	5.29	+	3.78	9.61E-04
+nuclear transport	166	24	6.37	+	3.77	7.02E-05
+nucleic acid transport	126	18	4.83	+	3.73	4.40E-03
+organelle localization	143	19	5.48	+	3.46	6.49E-03
+generation of precursor metabolites and energy	166	22	6.37	+	3.46	1.13E-03
+ribosomal small subunit biogenesis	132	17	5.06	+	3.36	3.16E-02
+RNA localization	140	18	5.37	+	3.35	1.82E-02
+nucleotide metabolic process	229	28	8.78	+	3.19	1.60E-04
+nucleoside phosphate metabolic process	233	28	8.94	+	3.13	2.28E-04
+ribosome biogenesis	365	42	14.00	+	3.00	4.03E-07
+rRNA processing	254	28	9.74	+	2.87	1.26E-03
+nucleobase-containing small molecule metabolic process	257	28	9.86	+	2.84	1.58E-03
+rRNA metabolic process	270	28	10.35	+	2.70	4.05E-03
+oxidation-reduction process	421	41	16.15	+	2.54	7.57E-05
+ribonucleoprotein complex biogenesis	443	43	16.99	+	2.53	3.68E-05
+ncRNA processing	363	33	13.92	+	2.37	7.98E-03
+organophosphate metabolic process	391	34	15.00	+	2.27	1.44E-02
+small molecule metabolic process	729	54	27.96	+	1.93	3.05E-03
+cellular component biogenesis	987	68	37.85	+	1.80	1.28E-03
+organonitrogen compound metabolic process	928	61	35.59	+	1.71	2.57E-02
+cellular nitrogen compound metabolic process	2137	116	81.96	+	1.42	1.02E-02
+nitrogen compound metabolic process	2307	122	88.48	+	1.38	1.79E-02
+metabolic process	3738	192	143.36	+	1.34	2.63E-07
+organic substance metabolic process	3381	170	129.66	+	1.31	3.66E-04
+cellular metabolic process	3357	168	128.74	+	1.30	7.74E-04
+cellular process	4676	221	179.33	+	1.23	7.06E-07
+biological_process	5895	253	226.08	+	1.12	7.80E-10

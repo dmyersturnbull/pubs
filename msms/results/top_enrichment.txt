@@ -1,0 +1,11 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (release 20150430)
+Annotation Version and Release Date:	GO Ontology database  Released 2015-08-06
+Analyzed List:	upload_1 (Saccharomyces cerevisiae)
+Reference List:	Saccharomyces cerevisiae (all genes in database)
+Bonferroni correction:	true
+GO biological process complete	Saccharomyces cerevisiae - REFLIST (6597)	upload_1 (42)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
