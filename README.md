@@ -2,7 +2,9 @@
 
 A poorly organized repository for mass spectrometry analysis for Physical Underpinnings of Biological Systems (PUBS) 2015 at UCSF, group _E. Poss_ — PyND. Authors: Douglas Myers-Turnbull, Yuliya Birman, Nick Rettko, and Paul Thomas.
 
-Also see `https://github.com/tlnagy/seq-analysis` for sequencing data analysis.
+This code and analysis was hacky, poorly organized, and ultimately not used.
+
+See `https://github.com/tlnagy/seq-analysis` for sequencing data analysis, which was used.
 
 The code (`.py` and `.ipynb` files) is licensed under the Apache License, Version 2.0.
 
